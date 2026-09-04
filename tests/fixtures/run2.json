@@ -1,0 +1,28 @@
+{
+  "created": 1700003600,
+  "environment": {"Platform": "linux"},
+  "tests": [
+    {
+      "nodeid": "tests/test_login.py::test_login_success",
+      "outcome": "passed",
+      "call": {"duration": 1.10},
+      "user_properties": []
+    },
+    {
+      "nodeid": "tests/test_login.py::test_login_invalid",
+      "outcome": "failed",
+      "call": {
+        "duration": 0.52,
+        "longrepr": "File \"/app/tests/test_login.py\", line 42, in test_login_invalid\n    assert 'Error' in driver.page_source\nAssertionError: assert 'Error' in '<html>...'"
+      },
+      "user_properties": []
+    },
+    {
+      "nodeid": "tests/test_home.py::test_banner_visible",
+      "outcome": "passed",
+      "call": {"duration": 1.8},
+      "user_properties": [],
+      "retries": 1
+    }
+  ]
+}
